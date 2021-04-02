@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2.5rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 70%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 5;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle1 {
+  top: 0%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 0%;
+  left: 10%;
+}
+
+.user__img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  padding: 1rem 0;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.link {
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 0rem 5rem;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.link h2 {
+  padding: 0rem 2rem;
+}
+.games {
+  flex: 2;
+}
+.pro {
+  color: #fff;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  padding: 1rem;
+  display: flex;
+  position: relative;
+}
+.pro img {
+  height: 100px;
+  position: absolute;
+  top: -10%;
+  right: 15%;
+}
+.pro h2 {
+  width: 40%;
+  color: #fff;
+  font-weight: 600;
+}
+
+/*Games*/
+
+.status {
+  margin-bottom: 1rem;
+}
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.6rem;
+}
+
+.games {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem;
+}
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.486),
+    rgba(255, 255, 255, 0.9)
+  );
+  border-radius: 1rem;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+  justify-content: space-between;
+}
+.card img {
+  height: 90px;
+}
+.progress {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 100%;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+}
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 60%;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.percentage {
+  font-weight: bold;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
